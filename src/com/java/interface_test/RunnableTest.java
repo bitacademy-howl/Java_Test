@@ -10,9 +10,19 @@ public class RunnableTest implements Runnable {
   public void run() {
     String threadName = Thread.currentThread().getName();
     System.out.println("- " + threadName + " has been started");
-    int delay = 1000 + random.nextInt(4000);
+    int count = 50 * random.nextInt(40);
+    int delay = random.nextInt(50);
+    System.out.println("t1's count : " + count);
+    System.out.println("t1's delay : " + delay);
     try {
-      Thread.sleep(delay);
+    	for (int i =0; i < count;) {
+    		
+    		System.out.println( "==>" + threadName + "'s counting..... : "+ i);
+    		Thread.sleep(delay);
+    		
+    		i = i+delay;
+    	}
+      
     } catch (InterruptedException e) {
       e.printStackTrace();
     }
