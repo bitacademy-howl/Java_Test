@@ -18,7 +18,7 @@ public class XML_Parsing_test {
 	
 	public void parseTest(String xml) throws Exception {
 		
-		byte [] b = new byte[1024];
+//		byte [] b = new byte[1024];
 		File f = new File(xml);
 //		File f = new File("/XMLFile.xml");
 		InputStream is = new FileInputStream(f);
@@ -26,11 +26,12 @@ public class XML_Parsing_test {
 //		System.out.println(f.getAbsolutePath());
 //		System.out.println(f.getCanonicalPath());
 		
-		is.read(b);
+//		is.read(b);
+//		is.close();
 //		System.out.println(is.read());
 //		String XML_String = new String(b);
 //		System.out.println(XML_String);
-		is.close();
+//		
 		
 //		InputStream bais = new ByteArrayInputStream(b);
 		
