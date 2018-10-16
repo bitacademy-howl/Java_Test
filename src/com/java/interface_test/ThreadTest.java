@@ -2,7 +2,7 @@ package com.java.interface_test;
 
 import java.util.Random;
 
-public class MyRunnable implements Runnable {
+public class ThreadTest extends Thread {
 
   private static final Random random = new Random();
 
@@ -19,4 +19,4 @@ public class MyRunnable implements Runnable {
     System.out.println("- " + threadName + " has been ended (" + delay + "ms)");
   }
 
-}s
+}

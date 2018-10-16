@@ -2,10 +2,12 @@ package com.java.interface_test;
 
 public class app {
 	public static void main(String[] args) {
-		MyThread mth = new MyThread();
-		mth.run();
+		ThreadTest mth = new ThreadTest();
+		mth.start();
 		
-		MyRunnable mra = new MyRunnable();
-		mra.run();
+		RunnableTest mra = new RunnableTest();
+//		mra.run();  // 이것은 쓰레드가 아님
+		Thread rable = new Thread(mra);
+		rable.start();
 	}
 }
