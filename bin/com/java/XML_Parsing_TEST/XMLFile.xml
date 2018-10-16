@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML 트리
+XML 문서는 HTML 문서와 마찬가지로 트리(tree) 형태의 계층 구조를 가집니다.
+
+ 
+
+이러한 XML 트리는 하나뿐인 루트(root) 요소부터 시작하여, 각각의 자식(child) 요소에 차례대로 연결됩니다.
+
+XML 트리 구조에 포함되는 모든 요소는 자신만의 자식(child) 요소를 가질 수 있습니다. -->
+<root name="123" id="1222">
+	<res name = "이것은 res 태그의 네임입니다.">
+		<code s="123">OK</code>
+		<msg>정상</msg>
+	</res>
+	<rx>
+	</rx>
+	
+	<px>
+	</px>
+</root>
