@@ -17,7 +17,11 @@ public class app {
 			
 			for(int i = 0; i < 10; i++) {
 				System.out.println(threadName);
-				sleep
+				try {
+					Thread.sleep(10);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
 			}
 			
 		});
