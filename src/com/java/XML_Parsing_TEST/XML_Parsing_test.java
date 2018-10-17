@@ -1,11 +1,11 @@
 package com.java.XML_Parsing_TEST;
 
-import java.io.ByteArrayInputStream;
+//import java.io.ByteArrayInputStream;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Iterator;
+//import java.io.FileInputStream;
+//import java.io.InputStream;
+//import java.io.InputStreamReader;
+//import java.util.Iterator;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -21,7 +21,7 @@ public class XML_Parsing_test {
 //		byte [] b = new byte[1024];
 		File f = new File(xml);
 //		File f = new File("/XMLFile.xml");
-		InputStream is = new FileInputStream(f);
+//		InputStream is = new FileInputStream(f);
 		
 //		System.out.println(f.getAbsolutePath());
 //		System.out.println(f.getCanonicalPath());
